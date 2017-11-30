@@ -23,8 +23,11 @@ Liquibase can be executed through either the command line or as part of a build 
 # How does it work #
 When Liquibase is executed, you must specify the database against which to apply your changesets.  Liquibase uses two tables to manage changes to the database: databasechangelog and databasechangelock.  If the tables don’t exist on the target database, they are created.  An entry is added to the databasechangelock table which ensures only one instance of Liquibase is running at a time.  The databasechangelog table contains a listing of every changeset that has been applied to this database.  Liquibase conducts a diff of the table contents with the XML files and determines which changes still need to be applied.  Once this is determined, Liquibase will then apply the changes to the database.  If you are new to Liquibase, then I recommend checking out their documentation on how to setup and get started.
 
-# KeyPoints to Remember #
+# Keypoints to Remember #
 
+* Exclude LiquibaseAutoConfiguration.class in Springboot Main class.
+* Create Datasource to get Connection with the help of Liquibase database.
+* Add yaml file in the Liquibase class and update the contexts.
 
 # Screenshot of this application Ouptut #
 
@@ -33,5 +36,6 @@ When Liquibase is executed, you must specify the database against which to apply
 ![liquibase_databasechangelog](liquibase_databasechangelog.png)
 
 ![liquibase-output](liquibase-output.png)
+
 
 # Happy Coding #
