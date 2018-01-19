@@ -35,6 +35,6 @@ When Liquibase is executed, you must specify the database against which to apply
 
 ![liquibase_databasechangelog](liquibase_databasechangelog.png)
 
-![liquibase-output](liquibase-output.png)
+![liquibase-ouput](liquibase-ouput.png)
 
 # Happy Coding #
