@@ -29,13 +29,12 @@ When Liquibase is executed, you must specify the database against which to apply
 * Create Datasource to get Connection with the help of Liquibase database.
 * Add yaml file in the Liquibase class and update the contexts.
 
-# Screenshot of this application Ouptut #
+# Screenshot of this application Ouptut # ![liquibase-output](liquibase-output.png)
 
 ![liquibase-dbchangelock](liquibase-dbchangelock.png)
 
 ![liquibase_databasechangelog](liquibase_databasechangelog.png)
 
 ![liquibase-output](liquibase-output.png)
-
 
 # Happy Coding #
